@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta
-    name="viewport"
+      name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <title>My awesome Page</title>
@@ -13,7 +13,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
     <style>
       /*  my own style */
       .rounded-img {
@@ -26,14 +30,38 @@
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Favorite places</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container text-center my-5">
       <div class="row">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <img
-            class="rounded-img"
-            src="DeadFenix.jpg"
-            alt="Bolt for u )"
-          />
+          <img class="rounded-img" src="DeadFenix.JPG" alt="Bolt for u )" />
           <h1 class="fw-light">VladTca</h1>
           <p class="lead text-muted">I am staudiiiing html))</p>
           <a
